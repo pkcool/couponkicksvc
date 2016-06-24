@@ -1,0 +1,46 @@
+
+<div>
+    <h2><span translate="couponkicksvcApp.address.detail.title">Address</span> {{vm.address.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="couponkicksvcApp.address.addressId">Address Id</span></dt>
+        <dd>
+            <span>{{vm.address.addressId}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.address.streetAddress1">Street Address 1</span></dt>
+        <dd>
+            <span>{{vm.address.streetAddress1}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.address.streetAddress2">Street Address 2</span></dt>
+        <dd>
+            <span>{{vm.address.streetAddress2}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.address.suburb">Suburb</span></dt>
+        <dd>
+            <span>{{vm.address.suburb}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.address.postalCode">Postal Code</span></dt>
+        <dd>
+            <span>{{vm.address.postalCode}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.address.city">City</span></dt>
+        <dd>
+            <span>{{vm.address.city}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.address.stateProvince">State Province</span></dt>
+        <dd>
+            <span>{{vm.address.stateProvince}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.address.country">Country</span></dt>
+        <dd>
+            <a ui-sref="country-detail({id:vm.address.country.id})">{{vm.address.country.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

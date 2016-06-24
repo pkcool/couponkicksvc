@@ -1,0 +1,64 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipType": "one-to-one",
+      "relationshipName": "billingAddress",
+      "otherEntityName": "address",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "merchant"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipType": "one-to-one",
+      "relationshipName": "shippingAddress",
+      "otherEntityName": "address",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "merchant"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "merchantId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "tradingName",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "abn",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "contact",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "createdDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "modifiedDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "lastLogonDate",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "changelogDate": "20160624175318",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "no",
+  "entityTableName": "merchant"
+}

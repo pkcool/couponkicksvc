@@ -1,0 +1,19 @@
+{
+    "home": {
+        "title": "歡迎, Coupon Kick User!",
+        "subtitle": "這裡是首頁",
+        "logged": {
+            "message": "您目前是以 \"{{username}}\" 帳號登入."
+        },
+        "question": "如果您有任何問題, 可以查閱下列資源:",
+        "link": {
+            "homepage": "首頁",
+            "stackoverflow": "Stack Overflow 上的討論",
+            "bugtracker": "錯誤追蹤",
+            "chat": "public chat room",
+            "follow": "在 Twitter上"
+        },
+        "like": "如果您喜歡, 請記得給我們一顆星星在",
+        "github": "GitHub"
+    }
+}

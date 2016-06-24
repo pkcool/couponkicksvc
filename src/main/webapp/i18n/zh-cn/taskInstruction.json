@@ -1,0 +1,23 @@
+{
+    "couponkicksvcApp": {
+        "taskInstruction" : {
+            "home": {
+                "title": "Task Instructions",
+                "createLabel": "Create a new Task Instruction",
+                "createOrEditLabel": "Create or edit a Task Instruction",
+                "search": "Search for Task Instruction"
+            },
+            "created": "A new Task Instruction is created with identifier {{ param }}",
+            "updated": "A Task Instruction is updated with identifier {{ param }}",
+            "deleted": "A Task Instruction is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Task Instruction {{ id }}?"
+            },
+            "detail": {
+                "title": "Task Instruction"
+            },
+            "taskInstructionId": "Task Instruction Id",
+            "description": "Description"
+        }
+    }
+}

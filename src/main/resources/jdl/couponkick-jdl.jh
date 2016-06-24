@@ -1,0 +1,64 @@
+entity Merchant {
+	merchantId Long,
+    tradingName String,
+    abn String,
+    contact String,
+    createdDate ZonedDateTime,
+    modifiedDate ZonedDateTime,
+    lastLogonDate ZonedDateTime
+}
+
+entity Address {
+	addressId Long,
+	streetAddress1 String,
+    streetAddress2 String,
+    suburb String,
+	postalCode String,
+	city String,
+	stateProvince String
+}
+
+entity Country {
+	countryId Long,
+	countryName String
+}
+
+entity Region {
+	regionId Long,
+	regionName String
+}
+
+entity Task {
+	taskId Long,
+	title String,
+	description String,
+	startDate ZonedDateTime,
+	endDate ZonedDateTime,
+	language Language
+}
+
+entity TaskInstruction {
+	taskInstructionId Long,
+    description String,
+}
+
+enum Language {
+    ENGLISH, CHINESE_SIMPLIFIED, SPANISH, FRENCH
+}
+
+relationship OneToOne {
+	Merchant{billingAddress} to Address
+}
+
+relationship OneToOne {
+	Merchant{shippingAddress} to Address
+}
+
+relationship OneToOne {
+	Address{country} to Country
+}
+
+relationship OneToOne {
+	Country{region} to Region
+}
+

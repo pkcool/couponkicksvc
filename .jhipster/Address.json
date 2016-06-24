@@ -1,0 +1,55 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipType": "one-to-one",
+      "relationshipName": "country",
+      "otherEntityName": "country",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "address"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "addressId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "streetAddress1",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "streetAddress2",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "suburb",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 6,
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 7,
+      "fieldName": "stateProvince",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160624174941",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "entityTableName": "address"
+}

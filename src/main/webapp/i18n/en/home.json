@@ -1,0 +1,19 @@
+{
+    "home": {
+        "title": "Welcome, Coupon Kick User!",
+        "subtitle": "This is your homepage",
+        "logged": {
+            "message": "You are logged in as user \"{{username}}\"."
+        },
+        "question": "If you have any question:",
+        "link": {
+            "homepage": "homepage",
+            "stackoverflow": "Stack Overflow",
+            "bugtracker": "bug tracker",
+            "chat": "public chat room",
+            "follow": "follow us on Twitter"
+        },
+        "like": "If you like coupon kick, don't forget to give us a star on",
+        "github": "GitHub"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "couponkicksvcApp": {
+        "Language" : {
+            "null": "",
+            "ENGLISH": "ENGLISH",
+            "CHINESE_SIMPLIFIED": "CHINESE_SIMPLIFIED",
+            "SPANISH": "SPANISH",
+            "FRENCH": "FRENCH"
+        }
+    }
+}

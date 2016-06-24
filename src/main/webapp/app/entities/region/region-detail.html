@@ -1,0 +1,22 @@
+
+<div>
+    <h2><span translate="couponkicksvcApp.region.detail.title">Region</span> {{vm.region.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="couponkicksvcApp.region.regionId">Region Id</span></dt>
+        <dd>
+            <span>{{vm.region.regionId}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.region.regionName">Region Name</span></dt>
+        <dd>
+            <span>{{vm.region.regionName}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

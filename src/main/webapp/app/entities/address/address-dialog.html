@@ -1,0 +1,74 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myAddressLabel" translate="couponkicksvcApp.address.home.createOrEditLabel">Create or edit a Address</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.address.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.address.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="couponkicksvcApp.address.addressId" for="field_addressId">Address Id</label>
+            <input type="number" class="form-control" name="addressId" id="field_addressId"
+                    ng-model="vm.address.addressId"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="couponkicksvcApp.address.streetAddress1" for="field_streetAddress1">Street Address 1</label>
+            <input type="text" class="form-control" name="streetAddress1" id="field_streetAddress1"
+                    ng-model="vm.address.streetAddress1"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="couponkicksvcApp.address.streetAddress2" for="field_streetAddress2">Street Address 2</label>
+            <input type="text" class="form-control" name="streetAddress2" id="field_streetAddress2"
+                    ng-model="vm.address.streetAddress2"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="couponkicksvcApp.address.suburb" for="field_suburb">Suburb</label>
+            <input type="text" class="form-control" name="suburb" id="field_suburb"
+                    ng-model="vm.address.suburb"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="couponkicksvcApp.address.postalCode" for="field_postalCode">Postal Code</label>
+            <input type="text" class="form-control" name="postalCode" id="field_postalCode"
+                    ng-model="vm.address.postalCode"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="couponkicksvcApp.address.city" for="field_city">City</label>
+            <input type="text" class="form-control" name="city" id="field_city"
+                    ng-model="vm.address.city"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="couponkicksvcApp.address.stateProvince" for="field_stateProvince">State Province</label>
+            <input type="text" class="form-control" name="stateProvince" id="field_stateProvince"
+                    ng-model="vm.address.stateProvince"
+                     />
+        </div>
+
+        <div class="form-group">
+            <label translate="couponkicksvcApp.address.country" for="field_country">Country</label>
+            <select class="form-control" id="field_country" name="country" ng-model="vm.address.country" ng-options="country as country.id for country in vm.countries | orderBy:'id' track by country.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

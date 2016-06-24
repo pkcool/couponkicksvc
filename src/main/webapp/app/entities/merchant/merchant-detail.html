@@ -1,0 +1,50 @@
+
+<div>
+    <h2><span translate="couponkicksvcApp.merchant.detail.title">Merchant</span> {{vm.merchant.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="couponkicksvcApp.merchant.merchantId">Merchant Id</span></dt>
+        <dd>
+            <span>{{vm.merchant.merchantId}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.merchant.tradingName">Trading Name</span></dt>
+        <dd>
+            <span>{{vm.merchant.tradingName}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.merchant.abn">Abn</span></dt>
+        <dd>
+            <span>{{vm.merchant.abn}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.merchant.contact">Contact</span></dt>
+        <dd>
+            <span>{{vm.merchant.contact}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.merchant.createdDate">Created Date</span></dt>
+        <dd>
+            <span>{{vm.merchant.createdDate | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.merchant.modifiedDate">Modified Date</span></dt>
+        <dd>
+            <span>{{vm.merchant.modifiedDate | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.merchant.lastLogonDate">Last Logon Date</span></dt>
+        <dd>
+            <span>{{vm.merchant.lastLogonDate | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="couponkicksvcApp.merchant.billingAddress">Billing Address</span></dt>
+        <dd>
+            <a ui-sref="address-detail({id:vm.merchant.billingAddressId})">{{vm.merchant.billingAddressId}}</a>
+        </dd>
+        <dt><span translate="couponkicksvcApp.merchant.shippingAddress">Shipping Address</span></dt>
+        <dd>
+            <a ui-sref="address-detail({id:vm.merchant.shippingAddressId})">{{vm.merchant.shippingAddressId}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
